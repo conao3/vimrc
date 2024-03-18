@@ -8,13 +8,13 @@ Jetpack 'junegunn/fzf', { 'do': {-> fzf#install()} }
 Jetpack 'vim-denops/denops.vim'
 Jetpack 'vim-denops/denops-helloworld.vim'
 Jetpack 'vim-skk/skkeleton'
-Jetpack 'vim-airline/vim-airline'
+Jetpack 'itchyny/lightline.vim'
 call jetpack#end()
 
-" skkeleton
+"skkeleton
 call skkeleton#config({ 'globalDictionaries': ['~/.skk/SKK-JISYO.L'] })
 imap <C-j> <Plug>(skkeleton-enable)
 cmap <C-j> <Plug>(skkeleton-enable)
 
-" airline
-let g:airline#extensions#tabline#enabled = 1
+"lightline
+set laststatus=2
